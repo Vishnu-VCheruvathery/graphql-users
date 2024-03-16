@@ -1,5 +1,3 @@
-
-
 module.exports = `#graphql
 type User{
     id: ID!

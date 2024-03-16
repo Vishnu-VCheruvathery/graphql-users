@@ -13,7 +13,8 @@ async function startServer() {
     // Apollo Server
     const server = new ApolloServer({
         typeDefs,
-        resolvers
+        resolvers,
+        introspection: true 
     });
 
     await mongoose.connect(MONGO_URL);
